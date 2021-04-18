@@ -1,3 +1,81 @@
+@-webkit-keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    height: 0%;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    visibility: hidden;
+    opacity: 0;
+    height: 0%;
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+}
+
+.fade-in {
+  -webkit-animation: fade-in 0.3s ease-in-out forwards;
+          animation: fade-in 0.3s ease-in-out forwards;
+}
+
+@-webkit-keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+@keyframes fade-out {
+  from {
+    visibility: visible;
+    opacity: 1;
+    height: 100%;
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+  }
+  to {
+    visibility: hidden;
+    opacity: 0;
+    height: 0%;
+  }
+}
+
+.fade-out {
+  -webkit-animation: fade-out 0.3s ease-in-out forwards;
+          animation: fade-out 0.3s ease-in-out forwards;
+}
+
 html {
   font-size: 100%;
   -webkit-box-sizing: border-box;
@@ -16,6 +94,10 @@ html {
 body {
   font-family: "Alata", sans-serif;
   font-size: 0.9375rem;
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
 
 h1,
@@ -181,12 +263,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.overlay.open {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
 }
 
 .overlay__menu ul li a {

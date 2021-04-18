@@ -15,6 +15,10 @@ html {
 body {
   font-family: "Alata", sans-serif;
   font-size: $font-body;
+
+  &.no-scroll {
+    overflow: hidden;
+  }
 }
 
 h1,
