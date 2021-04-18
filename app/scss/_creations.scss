@@ -1,0 +1,54 @@
+.creations {
+  h2 {
+    text-align: center;
+    color: $black;
+    font-size: 2rem;
+    margin: 3.5rem 0 3.125rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+  &__image {
+    height: 7.5rem;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(50%);
+    }
+  }
+
+  &__text {
+    position: absolute;
+    left: 5%;
+    bottom: 10%;
+    color: $white;
+    width: 130px;
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__button {
+    a {
+      color: $black;
+      display: inline-block;
+      padding: 0.5rem 3.125rem;
+      border: 1px solid $black;
+      margin-top: 2.625rem;
+      margin-bottom: 4.5rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  }
+}

@@ -1,0 +1,26 @@
+.about {
+  text-align: center;
+  &__image {
+    background-image: url("../../images/mobile/image-interactive.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 12.875rem;
+    width: 100%;
+    margin-top: 5rem;
+  }
+
+  &__text {
+    padding: 1.875rem 1.25rem;
+
+    h2 {
+      color: $black;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      color: $darkGray;
+    }
+  }
+}
