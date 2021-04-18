@@ -353,6 +353,12 @@ li {
   text-align: center;
 }
 
+@media (min-width: 64em) {
+  .about {
+    position: relative;
+  }
+}
+
 .about__image {
   background-image: url("../../images/mobile/image-interactive.jpg");
   background-repeat: no-repeat;
@@ -361,6 +367,14 @@ li {
   height: 12.875rem;
   width: 100%;
   margin-top: 5rem;
+}
+
+@media (min-width: 64em) {
+  .about__image {
+    width: 60%;
+    height: 25.375rem;
+    background-size: 100%;
+  }
 }
 
 .about__text {
@@ -375,6 +389,31 @@ li {
 
 .about__text p {
   color: #8c8c8c;
+}
+
+@media (min-width: 64em) {
+  .about__text {
+    background: white;
+    position: absolute;
+    top: 35%;
+    left: 47%;
+    width: 36.3125rem;
+    padding: 0;
+  }
+  .about__text h2 {
+    text-align: left;
+    margin-top: 66px;
+    margin-left: 50px;
+    width: 272px;
+    font-weight: 400;
+  }
+  .about__text p {
+    font-size: 12px;
+    text-align: left;
+    margin-left: 50px;
+    width: 360px;
+    line-height: 1.8;
+  }
 }
 
 .creations h2 {
