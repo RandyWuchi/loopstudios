@@ -3,15 +3,38 @@
   width: 100%;
   padding: 3.125rem 1.875rem 0;
 
+  @include breakpoint-up(large) {
+    padding: 3.125rem 7.25rem;
+  }
+
   &__logo {
-    width: 125px;
-    height: 29px;
+    width: 134px;
+    height: 20px;
     overflow: hidden;
     z-index: 1;
 
     img {
       width: 100%;
       height: 100%;
+    }
+
+    @include breakpoint-up(large) {
+      width: 140px;
+      height: 25px;
+    }
+  }
+
+  &__links {
+    a {
+      display: inline-block;
+      color: $white;
+      font-size: 0.78125rem;
+    }
+
+    li {
+      &:not(:last-child) {
+        margin-right: 1rem;
+      }
     }
   }
 
@@ -80,13 +103,6 @@
   background: $black;
   display: flex;
   align-items: center;
-  // justify-content: center;
-
-  // &.open {
-  //   opacity: 1;
-  //   visibility: visible;
-  //   height: 100%;
-  // }
 
   &__menu {
     ul {

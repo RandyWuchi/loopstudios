@@ -69,6 +69,10 @@ li {
 .container {
   max-width: 69.5rem;
   margin: 0 1.875rem;
+
+  @include breakpoint-up(large) {
+    margin: 0 7.25rem;
+  }
 }
 
 // Visibility
