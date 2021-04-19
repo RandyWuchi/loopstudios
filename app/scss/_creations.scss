@@ -1,14 +1,30 @@
 .creations {
-  h2 {
-    text-align: center;
-    color: $black;
-    font-size: 2rem;
-    margin: 3.5rem 0 3.125rem;
+  @include breakpoint-up(large) {
+    margin-bottom: 8.4375rem;
+  }
+  &__header {
+    h2 {
+      text-align: center;
+      color: $black;
+      font-size: 2rem;
+      margin: 3.5rem 0 3.125rem;
+    }
+
+    @include breakpoint-up(large) {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
   &__grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1.75rem;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.3rem;
+    }
   }
 
   &__item {
@@ -25,6 +41,14 @@
       object-fit: cover;
       filter: brightness(50%);
     }
+
+    @include breakpoint-up(large) {
+      height: 20.0625rem;
+
+      img {
+        filter: brightness(90%);
+      }
+    }
   }
 
   &__text {
@@ -36,6 +60,11 @@
 
     h3 {
       font-size: 1.5rem;
+    }
+
+    @include breakpoint-up(large) {
+      left: 15%;
+      bottom: 6%;
     }
   }
 
@@ -49,6 +78,14 @@
       margin-bottom: 4.5rem;
       text-transform: uppercase;
       letter-spacing: 2px;
+    }
+
+    @include breakpoint-up(large) {
+      a {
+        margin: 0;
+        padding: 0.3rem 2rem;
+        font-size: 0.75rem;
+      }
     }
   }
 }
